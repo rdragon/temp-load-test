@@ -13,7 +13,7 @@ await Task.WhenAll(Enumerable.Range(0, threads).Select(async _ =>
 
     while (true)
     {
-        Console.WriteLine(await httpClient.GetStringAsync($"https://p-load-test.azurewebsites.net/encode?iterationCount={iterationCount}&password={password++}"));
+        Console.WriteLine(await httpClient.GetStringAsync($"https://p-e-onl-loadtest.azurewebsites.net/encode?iterationCount={iterationCount}&password={password++}"));
     }
 }));
 
